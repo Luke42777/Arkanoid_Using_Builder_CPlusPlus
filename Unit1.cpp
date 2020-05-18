@@ -24,18 +24,21 @@ void __fastcall TForm1::TimerBallTimer(TObject *Sender)
        ball->Top += y;
        //reflect from left wall
 
-       if(ball->Left - 5 <= background->Left)   // -5 pixels
+       if(ball->Left  <= background->Left)
        {
-       x = -x;
+        x = -x;
        }
 
-       if(ball->Top - 5 <= background->Top)
+        //refelct from top wall
+       if(ball->Top  <= background->Top)
        {
-       y = -y;
+        y = -y;
        }
-       if(ball->Left - 5 <= background->Left)   // -5 pixels
+
+       //reflect from right wall
+       if(ball->Left + ball->Width >= background->Width)
        {
-       x = -x;
+        x = -x;
        }
 
 

@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 192
   Top = 125
-  Width = 924
+  Width = 541
   Height = 480
   Caption = 'Form1'
   Color = clBtnFace
@@ -16,14 +16,14 @@ object Form1: TForm1
   object background: TShape
     Left = 0
     Top = 0
-    Width = 908
+    Width = 525
     Height = 441
     Align = alClient
     Brush.Color = clMedGray
   end
   object ball: TImage
-    Left = 184
-    Top = 400
+    Left = 152
+    Top = 256
     Width = 32
     Height = 32
     AutoSize = True
