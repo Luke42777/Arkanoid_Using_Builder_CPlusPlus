@@ -40,8 +40,56 @@ void __fastcall TForm1::TimerBallTimer(TObject *Sender)
        {
         x = -x;
        }
-
+       //loose    condition
+       if(ball->Top  >  paddle->Top + 15)
+       {
+           TimerBall->Enabled = false; // turn of timer
+           ball->Visible = false; //hide ball
+       }
 
 
 }
 //---------------------------------------------------------------------------
+void __fastcall TForm1::toTheLeftTimer(TObject *Sender)
+{
+        paddle->Left -= 10;        
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::toTheRightTimer(TObject *Sender)
+{
+        paddle->Left += 10;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::FormKeyDown(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+        if(Key == VK_LEFT)
+        {
+          toTheLeft->Enabled = true;
+        }
+        if(Key == VK_RIGHT)
+        {
+          toTheRight->Enabled = true;
+        }
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::FormKeyUp(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+        if(Key == VK_LEFT)
+        {
+            toTheLeft->Enabled = false;
+        }
+        if(Key == VK_RIGHT)
+        {
+         toTheRight->Enabled = false;
+
+        }
+
+}
+//---------------------------------------------------------------------------
+
