@@ -52,13 +52,15 @@ void __fastcall TForm1::TimerBallTimer(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::toTheLeftTimer(TObject *Sender)
 {
-        paddle->Left -= 10;        
+        if(paddle->Left > 10)
+        paddle->Left  -= 10;
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::toTheRightTimer(TObject *Sender)
 {
-        paddle->Left += 10;
+        if((paddle->Left + paddle->Width) < (background->Width - 10))
+        paddle->Left  += 10;
 }
 //---------------------------------------------------------------------------
 

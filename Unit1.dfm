@@ -5,6 +5,8 @@ object Form1: TForm1
   Height = 480
   Caption = 'Form1'
   Color = clBtnFace
+  UseDockManager = True
+  DockSite = True
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -24,8 +26,8 @@ object Form1: TForm1
     Brush.Color = clMedGray
   end
   object ball: TImage
-    Left = 152
-    Top = 256
+    Left = 280
+    Top = 104
     Width = 32
     Height = 32
     AutoSize = True
@@ -331,7 +333,7 @@ object Form1: TForm1
     Transparent = True
   end
   object TimerBall: TTimer
-    Interval = 50
+    Interval = 10
     OnTimer = TimerBallTimer
     Left = 200
     Top = 24
@@ -347,7 +349,7 @@ object Form1: TForm1
     Enabled = False
     Interval = 20
     OnTimer = toTheRightTimer
-    Left = 416
-    Top = 80
+    Left = 392
+    Top = 96
   end
 end

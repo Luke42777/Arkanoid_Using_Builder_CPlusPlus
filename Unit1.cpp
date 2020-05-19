@@ -41,13 +41,17 @@ void __fastcall TForm1::TimerBallTimer(TObject *Sender)
         x = -x;
        }
        //loose    condition
-       if(ball->Top  >  paddle->Top + 15)
+       if(ball->Top  >=  paddle->Top + 15)
        {
            TimerBall->Enabled = false; // turn of timer
            ball->Visible = false; //hide ball
        }
-
-
+       else if( (ball->Left > paddle->Left - ball->Width/2)
+       && (ball->Left < paddle->Left + paddle->Width)
+       && (ball->Top + ball->Height  > paddle->Top ))
+       {
+           if(y > 0) y = -y;
+       }
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::toTheLeftTimer(TObject *Sender)
