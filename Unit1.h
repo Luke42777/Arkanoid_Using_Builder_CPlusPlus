@@ -18,19 +18,20 @@ __published:	// IDE-managed Components
         TTimer *TimerBall;
         TImage *paddle;
         TTimer *toTheLeft;
-        TImage *Image1;
+        TImage *brick1;
         TTimer *toTheRight;
-        TImage *Image2;
-        TImage *Image3;
-        TImage *Image4;
-        TImage *Image5;
-        TImage *Image6;
-        TImage *Image7;
-        TImage *Image8;
-        TImage *Image9;
-        TImage *Image10;
-        TImage *Image11;
-        TImage *Image12;
+        TImage *brick2;
+        TImage *brick3;
+        TImage *brick4;
+        TImage *brick5;
+        TImage *brick6;
+        TImage *brick7;
+        TImage *brick8;
+        TImage *brick9;
+        TImage *brick10;
+        TImage *brick11;
+        TImage *brick12;
+        TButton *Button1;
         void __fastcall TimerBallTimer(TObject *Sender);
         void __fastcall toTheLeftTimer(TObject *Sender);
         void __fastcall toTheRightTimer(TObject *Sender);
@@ -38,6 +39,7 @@ __published:	// IDE-managed Components
           TShiftState Shift);
         void __fastcall FormKeyUp(TObject *Sender, WORD &Key,
           TShiftState Shift);
+        void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);

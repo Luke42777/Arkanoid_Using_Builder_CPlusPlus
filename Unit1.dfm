@@ -26,7 +26,7 @@ object Form1: TForm1
     Brush.Color = clMedGray
   end
   object ball: TImage
-    Left = 120
+    Left = 96
     Top = 240
     Width = 32
     Height = 32
@@ -332,7 +332,7 @@ object Form1: TForm1
       17291E17291E17291E17291E17291EFFFFFF}
     Transparent = True
   end
-  object Image1: TImage
+  object brick1: TImage
     Left = 72
     Top = 0
     Width = 60
@@ -680,7 +680,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image2: TImage
+  object brick2: TImage
     Left = 136
     Top = 0
     Width = 60
@@ -1028,7 +1028,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image3: TImage
+  object brick3: TImage
     Left = 200
     Top = 0
     Width = 60
@@ -1376,7 +1376,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image4: TImage
+  object brick4: TImage
     Left = 264
     Top = 0
     Width = 60
@@ -1724,7 +1724,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image5: TImage
+  object brick5: TImage
     Left = 328
     Top = 0
     Width = 60
@@ -2072,7 +2072,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image6: TImage
+  object brick6: TImage
     Left = 392
     Top = 0
     Width = 60
@@ -2420,7 +2420,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image7: TImage
+  object brick7: TImage
     Left = 136
     Top = 64
     Width = 60
@@ -2768,7 +2768,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image8: TImage
+  object brick8: TImage
     Left = 200
     Top = 64
     Width = 60
@@ -3116,7 +3116,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image9: TImage
+  object brick9: TImage
     Left = 264
     Top = 64
     Width = 60
@@ -3464,7 +3464,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image10: TImage
+  object brick10: TImage
     Left = 328
     Top = 64
     Width = 60
@@ -3812,7 +3812,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image11: TImage
+  object brick11: TImage
     Left = 200
     Top = 128
     Width = 60
@@ -4160,7 +4160,7 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
-  object Image12: TImage
+  object brick12: TImage
     Left = 264
     Top = 128
     Width = 60
@@ -4507,6 +4507,22 @@ object Form1: TForm1
       0000800000800000800000800000800000800000800000800000800000800000
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
+  end
+  object Button1: TButton
+    Left = 152
+    Top = 240
+    Width = 273
+    Height = 49
+    Caption = 'You win. Play again?'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    Visible = False
+    OnClick = Button1Click
   end
   object TimerBall: TTimer
     Interval = 10

@@ -12,6 +12,14 @@ TForm1 *Form1;
 int x = -8;    //8 positions left
 int y = -8;; // 8 positions up
 //---------------------------------------------------------------------------
+bool collision(TImage * ball,TImage * brick)
+{
+;
+   //if((ball->Left + ball->Width == brick->Left)
+   //&& (ball->Top <= brick
+
+}
+//---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
         : TForm(Owner)
 {
@@ -52,6 +60,13 @@ void __fastcall TForm1::TimerBallTimer(TObject *Sender)
        {
            if(y > 0) y = -y;
        }
+/////collisions with bricks////////////////////////////////////////////
+        for(int i = 0; i < 12;i++)
+        {
+                if(coll
+        }
+
+
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::toTheLeftTimer(TObject *Sender)
@@ -98,4 +113,5 @@ void __fastcall TForm1::FormKeyUp(TObject *Sender, WORD &Key,
 
 }
 //---------------------------------------------------------------------------
+
 
